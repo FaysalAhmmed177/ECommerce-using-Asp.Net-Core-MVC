@@ -37,6 +37,7 @@ namespace eTickets.Controllers
                 return View(actor);
             }
             await _service.AddAsync(actor);
+
             return RedirectToAction(nameof(Index));
         }
 
